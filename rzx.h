@@ -11,6 +11,9 @@
 
 #ifndef RZX_LIBRARY_INCLUDE
 #define RZX_LIBRARY_INCLUDE
+
+#include "stdint.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -23,9 +26,9 @@ extern "C" {
 /* ******************** Configuration options ******************** */
 
 /* If needed, please edit the data types definitions as requested  */
-typedef unsigned char rzx_u8;           /* must be unsigned 8-bit  */
-typedef unsigned short int rzx_u16;     /* must be unsigned 16-bit */
-typedef unsigned long int rzx_u32;      /* must be unsigned 32-bit */
+typedef uint8_t rzx_u8;                 /* must be unsigned 8-bit  */
+typedef uint16_t rzx_u16;               /* must be unsigned 16-bit */
+typedef uint32_t rzx_u32;               /* must be unsigned 32-bit */
 
 /* Uncomment the next line for Motorola-byte-order CPUs            */
 /* #define RZX_BIG_ENDIAN */
